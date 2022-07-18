@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
-       <!-- Enlace a jQuery, opper.js,y Bootstrap JS -->
+       
    <!--Enlace a css de Boostrap-->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+   <!-- Enlace a jQuery, opper.js,y Bootstrap JS --> 
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
    crossorigin="anonymous"></script>
  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
@@ -20,34 +21,40 @@
    crossorigin="anonymous"></script>
 </head>
 <body>
-    <form class="container border text-center">
+    <form class="container border text-center" name="formularioContacto" id="formularioContacto" >
         <div class="p-3 mb-2 bg-success text-white">
         <h1>Formulario de Contacto</h1>
         </div>
         <div class="form-row ">
+            <!-- Campo del nombre--> 
           <div class="form-group col-lg-3 col-md-3 mx-auto ">
             <label for="inputName">Nombre</label>
-            <input type="text" class="form-control" id="inputName" placeholder="Nombre">
+            <input type="text" class="form-control" id="inputName" placeholder="Nombre" name="nombre">
           </div>
+           <!-- Campo del correo electrónico--> 
           <div class="form-group col-lg-3 col-md-3 mx-auto">
             <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="email">
           </div>
         </div>
+         <!-- Campo del subject--> 
         <div class="form-group col-lg-8 col-md-4 mx-auto" >
           <label for="inputSubject">Subject</label>
-          <input type="text" class="form-control" id="inputSubject" placeholder="Subject">
+          <input type="text" class="form-control" id="inputSubject" placeholder="Subject" name="subject">
         </div>
+         <!-- Campo del mensaje--> 
         <div class="form-group col-lg-8 col-md-4 mx-auto">
-          <label for="inputMessage">Message</label> <br>
+          <label for="inputMessage">Mensaje</label> <br>
           <textarea name="mensaje" id="inputMessage" placeholder="inputMessage" cols="94" rows="5"></textarea>
         </div>
+         <!-- Campo del captcha--> 
         <div class="form-group col-lg-8 col-md-4 mx-auto">
             <label for="inputCaptcha">Captcha</label>
-            <input type="text" class="form-control" id="inputCaptcha" placeholder="inputCaptcha">
+            <input type="text" class="form-control" id="inputCaptcha" placeholder="inputCaptcha" name="captcha">
         </div>
         
         <div class="form-group">
+             <!-- Caja de verificación--> 
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="gridCheck">
             <label class="form-check-label" for="gridCheck">
@@ -55,8 +62,11 @@
             </label>
           </div>
         </div>
+         <!-- Botón de envío--> 
         <button type="submit" class="btn btn-success">Enviar mensaje</button>
       </form>
-    
+    <script src="../static/js/validacion.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.js"></script>
 </body>
 </html>
