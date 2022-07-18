@@ -24,7 +24,7 @@ def index():
 
     """
 
-    return render_template("layouts/block_hopper.html")
+    return render_template("layouts/index.html")
 
 
 if __name__ == "__main__":
