@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     $('#formularioContacto').validate({
         /**Reglas de validación */
         rules:{
@@ -6,7 +7,8 @@ $(document).ready(function() {
             //Se requiere que ingrese el nombre y tengan una logitud de al menos 3 caracteres
             nombre: {
                 required:true,
-                minlength:3
+                minlength:3,
+                maxlength:30
             },
              //Se requiere que ingrese el correo electrónico
             email: {
@@ -24,9 +26,15 @@ $(document).ready(function() {
             },
             //Se requiere que ingrese el captcha y tengan una logitud de al menos 2 caracteres
             captcha:{
-                required:true,
-                minlength:2
+                minlength:2,
+                required: true, 
+                    
+                
             },
+            //Se requiere marcar
+            check:{
+                required:true
+            }
         },
             //mensajes de las reglas de validación
             messages:{
@@ -50,6 +58,10 @@ $(document).ready(function() {
                 captcha:{
                     required:"Ingrese el codigo",
                     minlength:"Debe tener al menos 2 caracteres"
+                  
+                },
+                check:{
+                    required:"Confirmación"
                 }
 
             },
