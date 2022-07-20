@@ -40,7 +40,8 @@ $(document).ready(function() {
             messages:{
                 nombre:{
                     required:"Ingrese su nombre",
-                    minlength:"Debe tener al menos 3 caracteres"
+                    minlength:"Debe tener al menos 3 caracteres",
+                    maxlength:"Debe tener a lo sumo 30 caracteres"
 
                 }
                 ,
