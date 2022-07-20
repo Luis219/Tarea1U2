@@ -20,7 +20,7 @@ def index():
 
     Retorno
     ------
-    Renderiza la página principal (block_hopper.html)
+    Renderiza la página principal (index.html)
 
     """
 
